@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HCPayModule'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'HCPayModule.'
 
 # This description is used to generate tags and improve search results.
@@ -25,7 +25,7 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '445878662@qq.com' => 'gongm@reachauto.com' }
-  s.source           = { :git => 'https://github.com/hondaVSP/GHACConnectSDK.git', :tag => s.version }
+  s.source           = { :git => 'https://github.com/hondaVSP/HCPayModule.git', :tag => s.version }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
