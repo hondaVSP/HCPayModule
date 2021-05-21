@@ -1,0 +1,6 @@
+framework module HCPayModule {
+  umbrella header "HCPayModule-umbrella.h"
+
+  export *
+  module * { export * }
+}
