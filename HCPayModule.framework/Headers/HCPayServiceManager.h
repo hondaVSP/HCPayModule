@@ -55,6 +55,18 @@ NS_ASSUME_NONNULL_BEGIN
                             resultBlock:(HCPayBlock)resultBlock;
 
 /**
+ 拉起微信支付(universalLink)
+ 
+ @param orderSign 拉起支付所用签名数据
+ @param resultBlock <#resultBlock description#>
+ @param universalLink <#universalLink description#>
+ */
+- (void)hc_paymentWXResultWithOrdersign:(NSString *)orderSign
+                          universalLink:(NSString *)universalLink
+                            resultBlock:(HCPayBlock)resultBlock;
+
+
+/**
  拉起支付宝支付
  
  @param orderSign 拉起支付所用签名数据
