@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HCPayModule'
-  s.version          = '1.0.3'
+  s.version          = '1.0.4'
   s.summary          = 'HCPayModule.'
 
 # This description is used to generate tags and improve search results.
@@ -32,17 +32,15 @@ TODO: Add long description of the pod here.
 
   s.static_framework = true
 
-  # 暴露出去的头文件
-  s.public_header_files = 'HCPayModule/Classes/HCPayServiceManager.h'
-  
+  # 暴露出去的头文件  
   s.vendored_frameworks = 'HCPayModule.framework'
 
   s.pod_target_xcconfig = {
-    'VALID_ARCHS' => 'x86_64 armv7 arm64',
-    'OTHER_LDFLAGS' => '-lObjC'
+    'VALID_ARCHS' => 'x86_64 armv7 armv7s arm64'
   }
 
-  s.frameworks = 'Security','CoreGraphics','WebKit'
+  s.frameworks = 'Security','CoreGraphics','WebKit','UIKit','Foundation','CoreMotion','CoreTelephony','SystemConfiguration'
+  s.libraries = 'stdc++','z','sqlite3'
 
   
   s.dependency 'WechatOpenSDK'
