@@ -89,6 +89,18 @@ NS_ASSUME_NONNULL_BEGIN
                             scheme:(NSString *)scheme
                        resultBlock:(HCPayBlock)resultBlock;
 
+
+
+/**
+ * 处理微信支付结果
+ *
+ * @param resp <#resp description#>
+ *
+ */
+- (void)hc_wxPayRespHandler:(id)resp;
+
+
+
 @end
 
 NS_ASSUME_NONNULL_END
